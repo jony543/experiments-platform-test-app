@@ -47,7 +47,7 @@
     type: jsPsychHtmlKeyboardResponse,
     stimulus: () => {
       var data = jsPsych.data.get().last(1);
-      return "prev sessions:<br/>" + JSON.stringify(data);
+      return "prev sessions:<br/>" + JSON.stringify(data.value);
     }
   };
   timeline.push(showPrevData);
